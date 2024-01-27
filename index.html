@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Player</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/icons/next-song.svg"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/player/playerHead.css.css" />
+    <link rel="stylesheet" href="./styles/player/playerBottom.css" />
+    <link rel="stylesheet" href="./styles/player/playerAdaptive.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/player/addSong.css">
+  </head>
+  <body>
+    <div class="site-container">
+      <main>
+        <div class="player-wrapper">
+          <div class="player__add-song">
+            <form class="player__add-song-form" action="#">
+              <label class="player__add-song-label" for="song-url">Link</label>
+              <input class="player__add-song-input" type="url" name="" id="song-url">
+              <label class="player__add-song-label" for="">Name</label>
+              <input class="player__add-song-input" type="text">
+              <label class="player__add-song-label" for="author">Author</label>
+              <input class="player__add-song-input" type="text" name="author" id="author">
+              <label class="player__add-song-label" for="background">Background</label>
+              <input class="player__add-song-input" type="url" name="" id="background">
+              <button class="player__add-song-button">Add</button>
+            </form>
+          </div>
+          <div class="player">
+            <div class="player__controls-area">
+              <div class="player__controls">
+                <div class="player__play-button">
+                  <img
+                    src="./assets/img/icons/triagle.svg"
+                    alt="play"
+                    class="player__play"
+                    id="active-play-state"
+                  />
+                  <div class="player__pause-bars">
+                    <div class="player__pause-bar"></div>
+                    <div class="player__pause-bar"></div>
+                  </div>
+                </div>
+                <!-- <button class="player__add-track">Add Song</button> -->
+                <div class="player__controls-regulators">
+                  <div class="player__time-codes">
+                    <p class="player__current-time">00:00</p>
+                    <p class="player__end-time"></p>
+                  </div>
+                  <input class="player__progress-bar" type="range" value="0" />
+                  <div class="player__switchers-and-volume">
+                    <div class="player__song-switchers">
+                      <img
+                        class="song-switcher player__prev-song"
+                        src="./assets/img/icons/prev-song.svg"
+                        alt="Previous song"
+                      />
+                      <img
+                        class="song-switcher player__next-song"
+                        src="./assets/img/icons/next-song.svg"
+                        alt="Next song"
+                      />
+                    </div>
+                    <div class="player__volume-wrapper">
+                      <p class="player__volume-string">Volume</p>
+                      <input type="range" class="player__volume" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="player__tracks-section">
+              <div class="player__tracks-area">
+                <div class="player__songs-wrapper"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <a class="author" href="https://github.com/Win4esterD">Win4esterD</a>
+        <p class="year">2023</p>
+        <a href="https://rs.school/js-stage0/" class="rs-school"
+          ><img
+            class="rs-school-logo"
+            src="./assets/img/icons/rs_school_js.png"
+            alt="rs-school logo"
+        /></a>
+      </footer>
+    </div>
+    <script src="./modules/songs.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

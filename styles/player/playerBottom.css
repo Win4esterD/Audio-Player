@@ -1,0 +1,45 @@
+.player__tracks-section {
+  width: 40.313rem;
+  max-width: 95%;
+  height: 21.875rem;
+  background: rgb(27, 30, 45);
+  border-radius: 0 0 1rem 1.313rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player__tracks-area {
+  width: 30.813rem;
+  height: 17.5rem;
+  background: rgb(39, 46, 71);
+  border-radius: 1rem;
+  overflow-y: auto;
+}
+
+.player__songs-wrapper{
+  margin-top: 1rem;
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.player__song {
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.813rem;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+}
+
+.player__song:hover{
+  cursor: pointer;
+  color: #E72A52;
+}
+
+#song-playing {
+  color: #E72A52;
+}

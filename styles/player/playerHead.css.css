@@ -1,0 +1,193 @@
+main {
+  max-width: 100%;
+}
+
+.player-wrapper{
+  max-width: 95%;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.player__controls-area {
+  width: 42.5rem;
+  max-width: 100%;
+  height: 16.875rem;
+  background: rgb(27, 30, 45);
+  border-radius: 1rem;
+  margin-top: 5rem;
+}
+
+.player__controls {
+  display: flex;
+  padding: 4rem 0 0 2.6rem;
+  position: relative;
+}
+
+.player__controls-regulators {
+  padding: 0 0 0 3.4rem;
+}
+
+.player__play-button {
+  width: 4.625rem;
+  height: 5rem;
+  background: rgb(231, 42, 82);
+  border-radius: 3.688rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.player__play-button:active {
+  transform: scale(0.9);
+}
+
+.player__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  display: none;
+}
+
+.player__pause-bars {
+  display: flex;
+  gap: 0.625rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#active-play-state {
+  display: flex;
+}
+
+.player__pause-bar {
+  width: 1.063rem;
+  height: 2.75rem;
+  background-color: #fff;
+}
+
+.player__time-codes {
+  display: flex;
+  gap: 17rem;
+}
+
+.player__current-time,
+.player__end-time {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.player__progress-bar[type="range"] {
+  -webkit-appearance: none;
+  width: 26.75rem;
+  height: 0;
+  border: 0.2rem solid rgb(231, 42, 82);
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.player__progress-bar[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 2.25rem;
+  background: rgb(231, 42, 82);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.player__progress-bar[type="range"]:focus {
+  outline: none;
+}
+
+.player__progress-bar[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.player__switchers-and-volume {
+  display: flex;
+  margin-top: 2rem;
+  padding-left: 4.3rem;
+  gap: 5.1rem;
+}
+
+.player__add-track {
+  width: 9.625rem;
+  height: 3.25rem;
+  background: rgb(231, 42, 82);
+  border-radius: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.813rem;
+  letter-spacing: 0px;
+  text-align: center;
+  position: absolute;
+  top: 10.6rem;
+  left: 2.5rem;
+  cursor: pointer;
+}
+
+.player__song-switchers {
+  display: flex;
+  gap: 3rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.song-switcher:hover {
+  cursor: pointer;
+}
+
+.song-switcher:active {
+  transform: scale(0.9);
+}
+
+.player__volume-wrapper {
+  position: relative;
+  bottom: 1rem;
+  left: 7.7rem;
+}
+
+.player__volume-string {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.688rem;
+  letter-spacing: 0;
+}
+
+.player__volume[type="range"] {
+  -webkit-appearance: none;
+  width: 6.563rem;
+  height: 0;
+  border: 0.2rem solid rgb(231, 42, 82);
+  cursor: pointer;
+}
+
+.player__volume[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background: rgb(231, 42, 82);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+footer {
+  height: 10vh;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.author{
+  color: #FFF;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-top: 2.5rem;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.author:hover{
+  transition: color .7s;
+  color: orangered;
+}
+
+.year{
+  color: #FFF;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-top: 2.5rem;
+}
+
+.rs-school{
+  padding: 1rem 2rem 0 0;
+  cursor: pointer;
+}
+
+.rs-school-logo{
+  width: 8rem;
+  height: 3rem;
+}
